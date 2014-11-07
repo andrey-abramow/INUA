@@ -1,0 +1,4 @@
+define([
+'./shadow-directive'
+
+],function(){});
