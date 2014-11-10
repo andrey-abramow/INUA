@@ -1,11 +1,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
+     <!-- Latest compiled and minified CSS -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/abn_tree.css">
-     <style>
+  <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVP20GCrSI0ZNqSr2SAyTgPd22wBHGD8k&sensor=false">
+  </script>
+
+
+  <style>
         html,body,div{
             padding: 0;
             margin:0;
@@ -30,6 +35,7 @@
         .b-center{
             width: 100%;
          }
+        .angular-google-map-container { height: 400px; }
 
         div.navbar-collapse.collapse {
             display: block;
@@ -108,41 +114,16 @@
                                  dkf jsdhfj dhksfjhksjdfhksjdhfk
                                </p>
                              </div>
-                             <div class="col-xs-6 center">
-                               <div class="row-fluid">
-                                 <div class="col-xs-3" style="padding: 0;">
-                                      <object id="logo_id_for_logo" width="100%" height="100%" type="application/x-shockwave-flash" data="http://voronin.ua/upload/flash/logoBlick.swf" style="visibility: visible;">
-                                       <param name="wmode" value="opaque">
-                                       <embed src="http://voronin.ua/upload/flash/logoBlick.swf" width="100%" height="100%" wmode="transparent">
-                                     </object>
-                                  </div>
+                             <div class="col-xs-6 center" ng-view>
 
                              </div>
-                               <div class="col-xs-9">
-                                 <p class="well">
-                                   Contacts
-                                 </p>
-
-                             </div>
-                             <div class="row">
-                               <div class="col-xs-12">
-                                 <div id="textContainer">
-                                   <p>Международный концерн "ВОРОНИН" — лидирующее предприятие по пошиву высококачественной одежды, фабрика входит в число мировых лидеров швейной промышленности. Торговая сеть представлена более 80 фирменными магазинами в разных странах — в Украине, Америке, Европе, России, СНГ.</p>
-                                   <p><img width="400" height="267" alt="" src="http://voronin.ua/upload/image/company1(1).jpg">&nbsp;&nbsp;<img width="400" height="267" alt="" src="http://voronin.ua/upload/image/company2(1).jpg"></p>
-                                   <p>Михаил Воронин — самый известный украинский модельер, которого по праву называют Мэтром мужского костюма. Мировое признание получил благодаря изобретению уникального макетно-жилетного метода пошива костюма без примерок! Достоинство, респектабельность и сдержанная элегантность костюмов от Воронина привлекают успешных и уверенных деловых людей с высокой репутацией. В костюме от Михаила Воронина совмещаются классические традиции, высокое качество, модные тренды и динамика современного образа жизни.</p>
-                                   <p>Основная задача — дать мужчине в костюме такую же свободу движения, как и без него. Особое внимание уделяется экологической чистоте изделия. Показы коллекций бренда Voronin демонстрируются в более чем 60 странах мира. Михаил Воронин единственный кутюрье — рекордсмен "Книги рекордов Гиннеса", обладатель престижных международных наград: Премия Мира "Престиж", "Золотой наперсток Парижа", "Лучшая торговая марка Италии", испанская "Золотая Арка Европы", занесен в книгу "100 знаменитостей мира моды" и удостоен звания "Легенда моды".</p>
-                                   <p>&nbsp;</p>
-                                   <p>&nbsp;&nbsp;&nbsp;</p></div>
-                               </div>
-                           </div>
-
-                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="b-container__footer"></div>
     </div>
+      </div>
       </div>
     <script src="bower_components/requirejs/require.js" data-main="app/main.js"></script>
 </body>

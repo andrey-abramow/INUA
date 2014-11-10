@@ -1,0 +1,22 @@
+{
+  "name": "inua-rest-api",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "mysql": "~2.4.3",
+    "jsonwebtoken": "*",
+    "crypto": "*",
+    "body-parser": "*",
+    "compression": "^1.2.0",
+    "cookie-parser": "*",
+    "express-myconnection": "*",
+          "password-generator" : "*"
+  },
+  "devDependencies": {
+    "bower": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

@@ -1,0 +1,4 @@
+- create sql scheme (script)
+- create user-login service
+- create backend background (NodeJS, Express ...)
+-

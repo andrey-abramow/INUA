@@ -7,7 +7,9 @@ require.config({
         'domReady': '../bower_components/requirejs-domready/domReady',
         'require': '../bower_components/requirejs/require',
         'angular-bootstrap-tpls':'../bower_components/angular-bootstrap/ui-bootstrap-tpls',
-        'abn_tree_directive':'js/abn_tree_directive'
+        'abn_tree_directive':'js/abn_tree_directive',
+        'google-maps':'../bower_components/angular-google-maps/dist/angular-google-maps',
+        'lodash':'../bower_components/lodash/dist/lodash'
 
 
 
@@ -17,6 +19,10 @@ require.config({
     shim: {
         'angular': {
             exports: 'angular'
+        },
+      'google-maps':{
+        deps:['angular','lodash'],
+        exports:'google-maps'
         },
         'abn_tree_directive':{
             deps: ['angular','angular-bootstrap-tpls'],
