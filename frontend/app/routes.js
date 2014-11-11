@@ -10,7 +10,7 @@ define(['./app'], function (app) {
         })
         .when('/catalog/:id',{
           templateUrl:'app/templates/catalog.html',
-          controller:'mainCtrl'
+          controller:'showFactoryCtrl'
         })
 
 

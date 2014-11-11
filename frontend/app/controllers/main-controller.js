@@ -2,12 +2,12 @@ define(['./module'],function (controllers){
     'use strict';
     controllers.controller('mainCtrl',['$scope','$http','mainService','$modal','$log', function ($scope,$http,mainService,$modal,$log){
         $scope.address="";
+        $scope.my_data=[];
+        mainService.fillTreeCatalog($scope.my_data);
 
-        $scope.icon=['icons/map5.png'];
-        navigator.geolocation.getCurrentPosition(function(pos) {
-        console.log('Position=')
-        console.log(pos);
-          $scope.map = {
+
+         navigator.geolocation.getCurrentPosition(function(pos) {
+           $scope.map = {
           center: {
             latitude: pos.coords.latitude,
             longitude: pos.coords.longitude
@@ -83,48 +83,9 @@ define(['./module'],function (controllers){
                 $log.info('Modal dismissed at: ' + new Date());
             });
         };
-      $scope.my_data = [{
-        label: 'CATALOG',
-        children: [
-          {
-          label: 'Clothers',
-          noLeaf: true,
-            children:['firm 1','firm 2','firm 3']
-          },
-          {
-            label: 'BOOTS',
-            noLeaf: true,
-            children:[{
-              label: 'Voronin',
-              onSelect: function(branch){
-                window.location.href="#catalog/12";
-              }
-
-            },'firm 2','firm 3']
-
-          },
-          {
-            label: 'TECHNICS',
-            noLeaf: true,
-            children:['firm 1','firm 2',{
-              label: 'notebooks',
-              noLeaf: true,
-              children:['firm 1','firm 2',{
-                label: 'notebooks',
-                noLeaf: true,
-                children:['firm 1','firm 2',{
-                  label: 'notebooks',
-                  noLeaf: true
-                }]
-              }]
-
-            }]
-
-          }
-          ]
 
 
-      }];
+
 
 
 // Please note that $modalInstance represents a modal window (instance) dependency.

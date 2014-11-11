@@ -4,6 +4,7 @@
 define([
 
     './main-controller',
-    './modalInstance-controller'
+    './modalInstance-controller',
+    './showFactory-controller'
 
 ],function(){});

@@ -40,6 +40,10 @@ var mysql = require('mysql'),
 
 
 app.get('/api/factory/:id',routes.getFactory);
+app.get('/api/factoryTypes',routes.getFactoryTypes);
+app.get('/api/factory',routes.getFactories);
+
+
 
 
 
